@@ -2,8 +2,56 @@
   <head>
     <title>홈 - Jang_Asked</title>
     <meta charset = "utf-8">
+    <style>
+      header.page-header{
+        display: flex;
+        height:50px;
+        min-width:120px;
+        align-items:center;
+        color:#000000;
+      }
+      header.page-header > h1{
+        margin: 2%;
+      }
+      section{
+        width:99%;
+        border:2px #000000 solid;
+        text-align:left;
+        padding:5px;
+        margin:0px;
+        background-color:white;
+        display:block;
+      }
+    </style>
+    <script>
+      function search_answer(){
+
+      }
+    </script>
   </head>
   <body>
-    <a href="Notice">Notice</a>
+    <aside class="area-sidebar"></aside>
+    <div id="container">
+      <header class="page-header">
+        <button type="button" class="btn-menu" title="menu">
+          <span>메뉴</span>
+        </button>
+        <h1>
+          <a href="https://huiwonjang.github.io/Jang_Asked/">Q&A - Jang</a>
+        </h1>
+        <div class="user-menu-dropdown">
+          <button type="button" class="btn-login" title="login"></button>
+        </div>
+      </header>
+      <a href="Notice">Notice</a>
+      <section>
+        <form>
+          <p>질문하기<br />
+            <textarea name="comments" cols="100" rows="10">질문을 남겨보세요.</textarea>
+          </p>
+        </form>
+      </section>
+      <button onClick="search_answer();">유사 답변 검색</button>
+    </div>
   </body>
 </html>
