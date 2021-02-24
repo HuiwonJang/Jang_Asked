@@ -4,6 +4,15 @@ body{
   background-color:white;
 }
 
+a:link{
+  color:black;
+  text-decoration:none;
+}
+a:visited{
+  color:black;
+}
+
+/*page header*/
 header.page_header{
   display: flex;
   justify-content: space-between;
@@ -29,14 +38,13 @@ header.page_header > button.btn_menu{
   font-size:20px;
 }
 
-}
 header.page_header > h1{
   display:flex;
   font-size:200%;
   color:#000000;
   font-weight:bold;
-
 }
+
 header.page_header > .user-menu-dropdown > button{
   display: flex;
   width:40px;
@@ -51,6 +59,7 @@ header.page_header > .user-menu-dropdown > button{
   font-size:20px;
 }
 
+/*section*/
 div#ask_wrap > section{
   font-size:1.3em;
   width:98%;
