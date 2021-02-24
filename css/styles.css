@@ -19,6 +19,7 @@ header.page_header > button.btn_menu{
   height:40px;
   border:1px;
   border-radius: 5px;
+  background-color:rgba(255, 255, 255, 0);
 }
 .fa-bars{
   margin:auto;
@@ -29,6 +30,7 @@ header.page_header > button.btn_menu{
 header.page_header > h1{
   display:flex;
   font-size:200%;
+  color:#000000;
   font-weight:bold;
 
 }
@@ -38,6 +40,7 @@ header.page_header > .user-menu-dropdown > button{
   height:40px;
   border:1px;
   border-radius: 5px;
+  background-color:rgba(255, 255, 255, 0);
 }
 .fa-user-circle{
   margin:auto;
