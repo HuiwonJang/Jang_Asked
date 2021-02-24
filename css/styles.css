@@ -11,12 +11,15 @@ header.page_header{
   align-items:center;
   color:#000000;
   background-color:#eeeeee;
+  margin:-10px;
+  margin-top:-10px;
   z-index:2;
 }
 header.page_header > button.btn_menu{
   display: flex;
   width:40px;
   height:40px;
+  margin:10px;
   border:1px;
   border-radius: 5px;
   background-color:rgba(255, 255, 255, 0);
@@ -38,6 +41,7 @@ header.page_header > .user-menu-dropdown > button{
   display: flex;
   width:40px;
   height:40px;
+  margin:10px;
   border:1px;
   border-radius: 5px;
   background-color:rgba(255, 255, 255, 0);
