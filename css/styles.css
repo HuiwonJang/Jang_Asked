@@ -1,0 +1,53 @@
+body{
+  font-family: NanumGothic, '나눔고딕', Arial, Verdana, sans-serif;
+  font-size:12px;
+  background-color:white;
+}
+
+header.page_header{
+  display: flex;
+  justify-content: space-between;
+  height:50px;
+  min-width:240px;
+  align-items:center;
+  color:#000000;
+  background-color:#eeeeee;
+  z-index:2;
+}
+header.page_header > button.btn_menu{
+  display: flex;
+  width:40px;
+  height:40px;
+}
+.fa-bars{
+  margin:auto;
+  font-size:20px;
+}
+
+}
+header.page_header > h1{
+  display:flex;
+  font-size:200%;
+  font-weight:bold;
+
+}
+header.page_header > .user-menu-dropdown > button{
+  display: flex;
+  width:40px;
+  height:40px;
+}
+.fa-user-circle{
+  margin:auto;
+  font-size:20px;
+}
+
+div#ask_wrap > section{
+  font-size:1.3em;
+  width:98%;
+  border:1px #000000 solid;
+  text-align:left;
+  padding:5px;
+  margin:0px;
+  background-color:white;
+  display:block;
+}
