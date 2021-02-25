@@ -22,18 +22,22 @@ a:active{
 header.page_header{
   display: flex;
   justify-content: space-between;
-  height:50px;
-  align-items:center;
-  color:#000000;
-  background-color:#eeeeee;
+  height:60px;
+  position:relative;
   margin:-10px;
   margin-top:-10px;
+  align-items:center;
+
+  color:#000000;
+  background-color:#eeeeee;
+
   z-index:2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
 header.page_header > button.btn_menu{
   display: flex;
-  width:40px;
-  height:40px;
+  width:50px;
+  height:50px;
   margin:10px;
   border:1px;
   border-radius: 5px;
@@ -41,7 +45,7 @@ header.page_header > button.btn_menu{
 }
 .fa-bars{
   margin:auto;
-  font-size:20px;
+  font-size:25px;
 }
 
 header.page_header > h1{
@@ -53,8 +57,8 @@ header.page_header > h1{
 
 header.page_header > .user-menu-dropdown > button{
   display: flex;
-  width:40px;
-  height:40px;
+  width:50px;
+  height:50px;
   margin:10px;
   border:1px;
   border-radius: 5px;
@@ -62,7 +66,7 @@ header.page_header > .user-menu-dropdown > button{
 }
 .fa-user-circle{
   margin:auto;
-  font-size:20px;
+  font-size:25px;
 }
 
 /*section*/
