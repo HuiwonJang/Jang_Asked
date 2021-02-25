@@ -4,18 +4,21 @@ body{
   background-color:white;
 }
 
-a:link{
-  color:black;
-  text-decoration:none;
+button.icon{
+  display: flex;
+  width:50px;
+  height:50px;
+  margin:10px;
+  border:1px;
+  border-radius: 5px;
+  background-color:rgba(255, 255, 255, 0);
 }
+
 a:visited{
-  color:black;
-}
-a:hover{
-  color:black;
+  color:inherit;
 }
 a:active{
-  color:black;
+  color:inherit;
 }
 
 /*page header*/
@@ -31,18 +34,10 @@ header.page_header{
   color:#000000;
   background-color:#eeeeee;
 
-  z-index:2;
+  z-index:1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
-header.page_header > button.btn_menu{
-  display: flex;
-  width:50px;
-  height:50px;
-  margin:10px;
-  border:1px;
-  border-radius: 5px;
-  background-color:rgba(255, 255, 255, 0);
-}
+
 .fa-bars{
   margin:auto;
   font-size:25px;
@@ -54,19 +49,93 @@ header.page_header > h1{
   color:#000000;
   font-weight:bold;
 }
-
-header.page_header > .user-menu-dropdown > button{
-  display: flex;
-  width:50px;
-  height:50px;
-  margin:10px;
-  border:1px;
-  border-radius: 5px;
-  background-color:rgba(255, 255, 255, 0);
+header.page_header > h1 > a:link{
+  color:black;
+  text-decoration:none;
 }
+header.page_header > h1 > a:hover{
+  color:black;
+}
+
 .fa-user-circle{
   margin:auto;
   font-size:25px;
+}
+
+/*menu*/
+div#menu_container{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:2;
+  top:0;
+  left:0;
+  background-color:white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  overflow-x:hidden;
+  transition:0.5s ease-in-out;
+  padding-top:60px;
+}
+
+ul, li{
+  list-style:none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div#menu_container > ul{
+  padding: 10px 0;
+  height: auto;
+}
+div#menu_container > ul:nth-child(2){
+  border-bottom: 2px solid black;
+}
+div#menu_container > ul > li{
+  display:block;
+  font-size: 13px;
+  font-weight:bold;
+  letter-spacing:0.12em;
+  line-height:39px;
+}
+div#menu_container > ul > li:nth-last-child(n+2){
+  border-bottom: 1px solid #EDEDED;
+}
+
+div#menu_container ul:nth-child(2) > li a{
+  padding: 8px 8px 8px 32px;
+	font-size: 20px;
+  color:black;
+  display:block;
+  transition: 0.2s ease-in-out;
+}
+
+div#menu_container ul:nth-child(3) > li a{
+  padding: 8px 8px 8px 32px;
+	font-size: 15px;
+  display: block;
+  color:black;
+  transition: 0.2s ease-in-out;
+}
+
+div#menu_container ul li a:link{
+  color:black;
+  text-decoration:none;
+}
+div#menu_container ul li a:hover{
+  color:#aaa;
+}
+
+.fa-times-circle{
+  margin:auto;
+  font-size:25px;
+}
+
+div#menu_container > button#btn_menu_close {
+	position: absolute;
+  text-align:left;
+	top: 0;
+	right: 25px;
+	margin-left: 50px;
 }
 
 /*section*/
