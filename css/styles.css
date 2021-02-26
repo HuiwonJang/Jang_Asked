@@ -4,14 +4,23 @@ body{
   background-color:white;
 }
 
-button.icon{
+button.btn_icon{
   display: flex;
   width:50px;
   height:50px;
   margin:10px;
-  border:1px;
+  border:0;
+  outline:0;
   border-radius: 5px;
   background-color:rgba(255, 255, 255, 0);
+}
+.icon{
+  font-size:25px;
+  margin:auto;
+  transition:0.1s ease-in-out;
+}
+.icon:hover{
+  color:#aaa;
 }
 
 a:visited{
@@ -32,15 +41,14 @@ header.page_header{
   align-items:center;
 
   color:#000000;
-  background-color:#eeeeee;
+  background-color:white;
 
   z-index:1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
-.fa-bars{
-  margin:auto;
-  font-size:25px;
+header.page_header > button{
+
 }
 
 header.page_header > h1{
@@ -55,11 +63,6 @@ header.page_header > h1 > a:link{
 }
 header.page_header > h1 > a:hover{
   color:black;
-}
-
-.fa-user-circle{
-  margin:auto;
-  font-size:25px;
 }
 
 /*menu*/
@@ -125,14 +128,8 @@ div#menu_container ul li a:hover{
   color:#aaa;
 }
 
-.fa-times-circle{
-  margin:auto;
-  font-size:25px;
-}
-
 div#menu_container > button#btn_menu_close {
 	position: absolute;
-  text-align:left;
 	top: 0;
 	right: 25px;
 	margin-left: 50px;
