@@ -30,7 +30,7 @@
           </button>
         </div>
       </header>
-
+      <!-- side menu container-->
       <div id="menu_container" class="menu">
         <button id="btn_menu_close" class="btn_icon" title="close" onclick='close_menu();'>
           <i class="far fa-times-circle icon"></i>
@@ -50,12 +50,14 @@
       <script src="js/menu.js"></script>
 
       <div id="ask_wrap" onclick="close_menu();">
-        <section>
-          <textarea name="comments" cols="90%" rows="10" placeholder="질문을 남겨보세요."></textarea>
-          <button type="button" class="btn_search_answer">
+        <div class="div_ask_box">
+          <textarea name="content" placeholder="질문을 입력하세요."></textarea>
+        </div>
+        <div class="div_btn">
+          <button type="button" class="btn_search_answer" onClick="search_answer();">
             <span>유사 답변 검색</span>
           </button>
-        </section>
+        </div>
       </div>
     </div>
   </body>
