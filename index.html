@@ -18,22 +18,22 @@
     <!-- main container-->
     <div id="container">
       <header class="page_header">
-        <button id="btn_menu" class="icon" title="menu" onClick="open_menu();">
-          <i class="fas fa-bars" ></i>
+        <button id="btn_menu" class="btn_icon" title="menu" onClick="open_menu();">
+          <i class="fas fa-bars icon" ></i>
         </button>
         <h1>
           <a href="https://huiwonjang.github.io/Jang_Asked/">Q&A - Jang9182</a>
         </h1>
         <div class="user-menu-dropdown">
-          <button type="button" id="btn_login" class="icon" title="login">
-            <i class="fas fa-user-circle"></i>
+          <button type="button" id="btn_login" class="btn_icon" title="login">
+            <i class="fas fa-user-circle icon"></i>
           </button>
         </div>
       </header>
 
       <div id="menu_container" class="menu">
-        <button id="btn_menu_close" class="icon" title="close" onclick='close_menu();'>
-          <i class="far fa-times-circle"></i>
+        <button id="btn_menu_close" class="btn_icon" title="close" onclick='close_menu();'>
+          <i class="far fa-times-circle icon"></i>
         </button>
         <ul>
           <li><a href="Notice">Notice</a></li>
@@ -49,7 +49,7 @@
       <br/>
       <script src="js/menu.js"></script>
 
-      <div id="ask_wrap">
+      <div id="ask_wrap" onclick="close_menu();">
         <section>
           <textarea name="comments" cols="90%" rows="10" placeholder="질문을 남겨보세요."></textarea>
           <button type="button" class="btn_search_answer">
