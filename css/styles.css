@@ -4,6 +4,12 @@ body{
   background-color:white;
 }
 
+ul, li{
+  list-style:none;
+  margin: 0 auto;
+  padding: 0;
+}
+
 button.btn_icon{
   display: flex;
   width:50px;
@@ -47,10 +53,6 @@ header.page_header{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
-header.page_header > button{
-
-}
-
 header.page_header > h1{
   display:flex;
   font-size:200%;
@@ -80,11 +82,6 @@ div#menu_container{
   padding-top:60px;
 }
 
-ul, li{
-  list-style:none;
-  margin: 0 auto;
-  padding: 0;
-}
 
 div#menu_container > ul{
   padding: 10px 0;
@@ -103,7 +100,6 @@ div#menu_container > ul > li{
 div#menu_container > ul > li:nth-last-child(n+2){
   border-bottom: 1px solid #EDEDED;
 }
-
 div#menu_container ul:nth-child(2) > li a{
   padding: 8px 8px 8px 32px;
 	font-size: 20px;
@@ -112,7 +108,6 @@ div#menu_container ul:nth-child(2) > li a{
   white-space: nowrap;
   transition: 0.2s ease-in-out;
 }
-
 div#menu_container ul:nth-child(3) > li a{
   padding: 8px 8px 8px 32px;
 	font-size: 15px;
@@ -121,7 +116,6 @@ div#menu_container ul:nth-child(3) > li a{
   color:black;
   transition: 0.2s ease-in-out;
 }
-
 div#menu_container ul li a:link{
   color:black;
   text-decoration:none;
@@ -138,13 +132,31 @@ div#menu_container > button#btn_menu_close {
 }
 
 /*section*/
-div#ask_wrap > section{
-  font-size:1.3em;
-  width:98%;
-  border:1px #000000 solid;
-  text-align:left;
-  padding:5px;
-  margin:0px;
+div#ask_wrap{
+  width:100%;
+  height:auto;
+  padding-top:10px;
+  background-color:white;
+  text-align:center;
+  display:block;
+}
+div#ask_wrap > .div_ask_box{
+  width:95%;
+  height:auto;
+  margin:auto;
   background-color:white;
   display:block;
+
+}
+
+.div_ask_box > textarea{
+  width:95%;
+  max-width:600px;
+  height:200px;
+  font-size:1.3em;
+  padding:10px;
+  background-color:#eeeeee;
+  border:0;
+  outline:0;
+  border-radius: 5px;
 }
