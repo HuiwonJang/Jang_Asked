@@ -108,14 +108,16 @@ div#menu_container ul:nth-child(2) > li a{
   padding: 8px 8px 8px 32px;
 	font-size: 20px;
   color:black;
-  display:block;
+  display:inline-block;
+  white-space: nowrap;
   transition: 0.2s ease-in-out;
 }
 
 div#menu_container ul:nth-child(3) > li a{
   padding: 8px 8px 8px 32px;
 	font-size: 15px;
-  display: block;
+  display:inline-block;
+  white-space: nowrap;
   color:black;
   transition: 0.2s ease-in-out;
 }
