@@ -6,6 +6,7 @@ $.ajax({
 function successFunction(data){
   var allRows = data.split(/\r?\n|\r/);
   var table = '<table>';
+  table += '<tbody>';
 
   for (var singleRow = 0; singleRow < 5; singleRow++){//allRows.length
     table += '<tr>';
