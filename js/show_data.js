@@ -1,6 +1,7 @@
 $.ajax({
   url: 'https://huiwonjang.github.io/Jang_Asked/data/asked_data.csv',
-  dataType: 'text'
+  dataType: 'text',
+  contentType: "application/x-www-form-urlencoded; charset=utf-8",
 }).done(successFunction);
 
 function successFunction(data){
@@ -14,7 +15,7 @@ function successFunction(data){
     var rowCells = allRows[singleRow].split(',');
     for (var rowCell = 0; rowCell < rowCells.length; rowCell++){
       table += '<td>';
-      table += rowCells[rowCell];
+      table += URLDecoder.decode(rowCells[rowCell], "UTF-8");
       table += '</td>';
     }
     table += '<\tr>';
