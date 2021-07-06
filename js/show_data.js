@@ -7,11 +7,11 @@ function successFunction(data){
   var allRows = data.split(/\r?\n|\r/);
   var table = '<table>';
 
-  for (var singleRow = 0; singleRow < allRows.length; singleRow++){
+  for (var singleRow = 0; singleRow < 5; singleRow++){//allRows.length
     table += '<tr>';
 
     var rowCells = allRows[singleRow].split(',');
-    for (var rowCell = 0; rowCell < 5; rowCell++){ //rowCells.length
+    for (var rowCell = 0; rowCell < rowCells.length; rowCell++){
       table += '<td>';
       table += rowCells[rowCell];
       table += '</td>';
