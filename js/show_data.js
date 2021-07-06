@@ -1,5 +1,5 @@
 $.ajax({
-  url: 'asked_data.csv',
+  url: 'https://huiwonjang.github.io/Jang_Asked/data/asked_data.csv',
   dataType: 'text',
   contentType: "application/x-www-form-urlencoded; charset=euc-kr",
 }).done(successFunction);
