@@ -11,13 +11,14 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <!--JS-->
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
     <!-- side bar -->
     <aside class="area-sidebar"></aside>
     <!-- main container-->
     <div id="container">
+      <!-- header -->
       <header class="page_header">
         <button id="btn_menu" class="btn_icon" title="menu" onClick="open_menu();">
           <i class="fas fa-bars icon" ></i>
@@ -32,6 +33,7 @@
         </div>
       </header>
       <!-- side menu container-->
+      <script src="js/menu.js"></script>
       <div id="menu_container" class="menu">
         <button id="btn_menu_close" class="btn_icon" title="close" onclick='close_menu();'>
           <i class="far fa-times-circle icon"></i>
@@ -48,8 +50,7 @@
         </ul>
       </div>
       <br/>
-      <script src="js/menu.js"></script>
-
+      <!-- main div - 1. ask-->
       <div id="ask_wrap" onclick="close_menu();">
         <div class="div_ask_box">
           <textarea name="content" placeholder="질문을 입력하세요."></textarea>
@@ -58,6 +59,10 @@
           <button type="button" class="btn_search_answer" onClick="search_answer();">
             <span>유사 답변 검색 - 준비중</span>
           </button>
+        </div>
+        <script src="js/show_data.js"></script>
+        <div class="div_qnas" id="div_qnas">
+
         </div>
       </div>
     </div>
