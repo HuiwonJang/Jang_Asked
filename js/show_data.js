@@ -11,7 +11,7 @@ function successFunction(data){
     table += '<tr>';
 
     var rowCells = allRows[singleRow].split(',');
-    for (var rowCell = 0; rowCell < rowCells.length; rowCell++){
+    for (var rowCell = 0; rowCell < 5; rowCell++){ //rowCells.length
       table += '<td>';
       table += rowCells[rowCell];
       table += '</td>';
