@@ -15,7 +15,7 @@ function successFunction(data){
     var rowCells = allRows[singleRow].split(',');
     for (var rowCell = 0; rowCell < rowCells.length; rowCell++){
       table += '<td>';
-      table += URLDecoder.decode(rowCells[rowCell], "UTF-8");
+      table += decodeURIComponent(rowCells[rowCell]);
       table += '</td>';
     }
     table += '<\tr>';
