@@ -9,7 +9,7 @@ function successFunction(data){
   var table = '<table>';
   table += '<tbody>';
 
-  for (var singleRow = 0; singleRow < 5; singleRow++){//allRows.length
+  for (var singleRow = 0; singleRow < 1; singleRow++){//allRows.length
     table += '<tr>';
 
     var rowCells = allRows[singleRow].split(',');
